@@ -10,3 +10,5 @@ export interface InfluxModuleAsyncOptions
     ) => Promise<InfluxModuleOptions> | InfluxModuleOptions;
     inject: any[];
 }
+
+export * from "@influxdata/influxdb-client";
