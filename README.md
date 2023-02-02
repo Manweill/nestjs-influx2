@@ -1,10 +1,7 @@
-![npm version](https://badgen.net/npm/v/nest-influxdb)
-![downloads](https://badgen.net/npm/dm/nest-influxdb)
-![issues](https://badgen.net/github/issues/vlzh/nest-influxdb)
 
 # Description
 
-InfluxDB module for Nest based on the official [InfluxDb package](https://yarnpkg.com/en/package/influx).
+InfluxDB module for Nest based on the official [InfluxDb package](https://classic.yarnpkg.com/en/package/@influxdata/influxdb-client).
 
 # Installation
 
