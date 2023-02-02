@@ -6,7 +6,7 @@ import { InfluxModuleOptions } from "./interfaces";
 export class InfluxDbService {
     connection: InfluxDB | null;
     constructor(
-        @Inject("INFLUX_2_OPTIONS")
+        @Inject("INFLUX_OPTIONS")
         private readonly config: InfluxModuleOptions
     ) {
         this.connection = null;

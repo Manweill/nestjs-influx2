@@ -4,13 +4,13 @@ import { InfluxModuleAsyncOptions, InfluxModuleOptions } from "./interfaces";
 
 @Global()
 @Module({})
-export class Influx2Module {
+export class InfluxModule {
     static forRoot(options: InfluxModuleOptions): DynamicModule {
         return {
-            module: Influx2Module,
+            module: InfluxModule,
             providers: [
                 {
-                    provide: "INFLUX_DB_OPTIONS",
+                    provide: "INFLUX_OPTIONS",
                     useValue: options,
                 },
                 InfluxDbService,
@@ -20,10 +20,10 @@ export class Influx2Module {
     }
     static forRootAsync(options: InfluxModuleAsyncOptions): DynamicModule {
         return {
-            module: Influx2Module,
+            module: InfluxModule,
             providers: [
                 {
-                    provide: "INFLUX_DB_OPTIONS",
+                    provide: "INFLUX_OPTIONS",
                     useFactory: options.useFactory,
                     inject: options.inject || [],
                 },
