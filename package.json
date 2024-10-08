@@ -1,6 +1,6 @@
 {
   "name": "nestjs-influx2",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "main": "./dist/index.js",
   "repository": "https://github.com/dalopez24/nestjs-influx2.git",
   "author": "dalopez24",
